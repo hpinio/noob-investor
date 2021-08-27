@@ -1,0 +1,38 @@
+<html>
+	<head></head>
+	<body>
+		<div>
+			<button type="button" id="calc3">Calc 3</button>
+			<button type="button" id="calc2">Calc 2</button>
+			<button type="button" id="calc1">Calc 1</button>
+		</div>
+		<script>
+			document.getElementById('calc1').addEventListener('click', calc1);
+			document.getElementById('calc2').addEventListener('click', calc2);
+			document.getElementById('calc3').addEventListener('click', calc3);
+
+			var initialValue = 50;
+
+			function calc1() {
+				initialValue += 500;
+				console.log(initialValue);
+			}
+
+			function calc2() {}
+
+			console.log(initialValue);
+
+			if (initialValue.apalah() > 50) {
+				var calculatedValue2 = 2000;
+				calculatedValue2 += 500;
+				console.log(calculatedValue2);
+			}
+
+			function calc3() {
+				var calculatedValue3 = 5000;
+				calculatedValue3 += 1000;
+				console.log(calculatedValue3);
+			}
+		</script>
+	</body>
+</html>
